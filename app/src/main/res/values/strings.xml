@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Generics-->
+    <string name="app_name">Cartola Ligas</string>
+    <string name="title_form_cadastro">ADMIN - Cadastro</string>
+    <string name="title_form_login">ADMIN - Login</string>
+    <string name="txt_Santa">Baba do Santa</string>
+    <string name="txt_Jogadores">Jogadores</string>
+    <string name="txt_Mitos">Mitos e Mitas</string>
+    <string name="txt_splash">ADM APP</string>
+    <string name="txt_zero">0</string>
+    <string name="error_generic">Ocorreu um erro. Por favor, tente novamente mais tarde!</string>
+
+    <!-- Strings Auth -->
+    <string name="hint_email_form_cadasto">exemplo@email.com</string>
+    <string name="hint_senha_form_cadasto">******</string>
+    <string name="txt_senha">Senha</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_enviar">Enviar</string>
+    <string name="txt_criarConta">Criar Conta</string>
+    <string name="txt_recuperarConta">Recuperar Conta</string>
+    <string name="txt_login_btn">Login</string>
+    <string name="btn_login">Entrar</string>
+
+    <!--    Firebase Auth-->
+    <string name="account_not_registered_register_fragment">Nenhuma conta encontrada com este e-mail!</string>
+    <string name="invalid_email_register_fragment">Insira um e-mail válido!</string>
+    <string name="invalid_password_register_fragment">Senha inválida! Tente novamente.</string>
+    <string name="strong_password_register_fragment">A senha deve conter pelo menos 6 caracteres!</string>
+    <string name="email_in_use_register_fragment">Este e-mail já está em uso!</string>
+    <string name="bs_message_password">Informe a sua senha!</string>
+    <string name="bs_message_email">Informe o seu e-mail!</string>
+    <string name="bs_recover_email_sucessfull">Recuperação realizada com sucesso! Verifique o seu e-mail.</string>
+
+
+    <!-- Strings Actions -->
+
+    <string name="txt_criarJogador">Criar Jogador</string>
+    <string name="txt_atualizar_jogador">Atualizar Jogador</string>
+    <string name="txt_deletar_jogador">Deletar Jogador</string>
+    <string name="txt_editar_jogador">Editar Jogador</string>
+    <string name="txt_lerDados">Ver Jogadores</string>
+    <string name="bs_button_confirm">Confirmar</string>
+
+    <!-- Strings TabLayout -->
+    <string name="txt_tabLayout_criar">Criar Cartoleiro</string>
+    <string name="txt_tabLayout_informacoes">Informações</string>
+    <string name="txt_tabLayout_verificar">Verificar Cartoleiro</string>
+
+    <!--    Forms Adicionar Jogador-->
+    <string name="txt_title_forms">Criar Jogador</string>
+    <string name="txt_nome_jogador">Nome do Jogador</string>
+    <string name="txt_nome_time">Nome do Time</string>
+    <string name="txt_pontos">pontos</string>
+    <string name="txt_ponto">ponto</string>
+    <string name="txt_titulos">Títulos</string>
+    <string name="txt_nenhum_player">Nenhum jogador adicionado até o momento</string>
+    <string name="bs_message_player_created">Jogador criado com sucesso!</string>
+    <string name="bs_message_player_updated">Jogador atualizado com sucesso!</string>
+    <string name="bs_message_player_error_generic">Erro ao criar o jogador! Tente novamente mais tarde.</string>
+    <string name="bs_message_player_name_error">Informe o nome do TIME.</string>
+    <string name="bs_message_player_team_error">Informe o nome do JOGADOR.</string>
+
+    <!--    Strings Títulos-->
+    <string name="txt_campeao_geral">Campeão Geral</string>
+    <string name="txt_vice_geral">Vice-Geral</string>
+    <string name="txt_terceiro_geral">3º Geral</string>
+    <string name="txt_quarto_geral">4º Geral</string>
+    <string name="txt_quinto_geral">5º Geral</string>
+    <string name="txt_campeao_turno">Campeão do Turno</string>
+    <string name="txt_campeao_copa">Campeão da Copa</string>
+    <string name="txt_vice_copa">Vice da Copa</string>
+    <string name="txt_terceiro_copa">3º da Copa</string>
+    <string name="txt_campeao_mes">Campeão do Mês</string>
+    <string name="txt_vice_mes">Vice do Mês</string>
+    <string name="txt_terceiro_mes">3º do Mês</string>
+    <string name="txt_geral">Geral</string>
+    <string name="txt_copa">Copa</string>
+    <string name="txt_mes">Mês</string>
+    <string name="txt_turno">Turno</string>
+
+    <!--    Strings Pontos-->
+    <string name="pt_campeao_geral">30</string>
+    <string name="pt_vice_geral">10</string>
+    <string name="pt_terceiro_geral">5</string>
+    <string name="pt_quarto_geral">4</string>
+    <string name="pt_quinto_geral">3</string>
+
+    <string name="pt_campeao_mes">5</string>
+    <string name="pt_vice_mes">2</string>
+    <string name="pt_terceiro_mes">1</string>
+
+    <string name="pt_campeao_copa">3</string>
+    <string name="pt_vice_copa">2</string>
+    <string name="pt_terceiro_copa">1</string>
+
+    <string name="pt_campeao_turno">10</string>
+
+    <!--    Hint FormPlayers-->
+    <string name="hint_edt_nome_jogador">Informe o nome do jogador</string>
+    <string name="hint_edt_nome_time">Informe o nome do time</string>
+
+    <!--    Strings Bottom Sheet-->
+
+    <string name="text_title_bottom_sheet">Atenção</string>
+    <string name="text_title_remove_bottom_sheet">Remover Jogador</string>
+    <string name="text_button_bottom_sheet">Entendi</string>
+    <string name="text_update_bottom_sheet">Atualizado</string>
+    <string name="text_remove_bottom_sheet">Tem certeza que quer remover este jogador?</string>
+    <string name="text_close_app_bottom_sheet">Tem certeza que quer sair do app?</string>
+    <string name="text_bottom_sheet_checkboxes">Informe a quantidade de títulos:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

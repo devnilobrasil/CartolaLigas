@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FormPlayerFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_create_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back">
+
+
+            <TextView
+                android:id="@+id/txt_toolbar_formPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_title_forms"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_nome_time"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_nome_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_form_players"
+                android:padding="13dp"
+                android:hint="@string/hint_edt_nome_time"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:inputType="text"
+                android:maxLines="1"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/txt_nome_jogador"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_nome_jogador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_form_players"
+                android:inputType="text"
+                android:hint="@string/hint_edt_nome_jogador"
+                android:textColorHint="@color/light_gray"
+                android:maxLines="1"
+                android:padding="13dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_geral"
+                    style="@style/ContainerComponents_Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/txt_geral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title_titulos"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:alpha="0.8"
+                        android:text="@string/txt_geral"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_geral">
+
+                        <LinearLayout
+                            android:id="@+id/ll_geral_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_campeao_geral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_campeao_geral"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                            <CheckBox
+                                android:id="@+id/rd_vice_geral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:layout_marginStart="7dp"
+                                android:text="@string/txt_vice_geral"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_geral_mid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_terceiro_geral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_terceiro_geral"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/rd_quarto_geral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_quarto_geral"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_geral_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_quinto_geral"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_quinto_geral"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_mes"
+                    style="@style/ContainerComponents_Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/txt_mes"
+                        android:alpha="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title_titulos"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/txt_mes"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_mes">
+
+                        <LinearLayout
+                            android:id="@+id/ll_mes_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_campeao_mes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_campeao_mes"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/rd_vice_mes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="7dp"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_vice_mes"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mes_mid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_terceiro_mes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_terceiro_mes"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_copa"
+                    style="@style/ContainerComponents_Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/txt_copa"
+                        android:alpha="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title_titulos"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/txt_copa"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_copa">
+
+                        <LinearLayout
+                            android:id="@+id/ll_copa_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_campeao_copa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_campeao_copa"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/rd_vice_copa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:layout_marginStart="7dp"
+                                android:text="@string/txt_vice_copa"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rg_copa_mid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_terceiro_copa"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_terceiro_copa"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_turno"
+                    style="@style/ContainerComponents_Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/txt_turno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title_titulos"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/txt_turno"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_turno">
+
+                        <LinearLayout
+                            android:id="@+id/rg_turno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <CheckBox
+                                android:id="@+id/rd_campeao_turno"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/light_blue"
+                                android:checked="false"
+                                android:text="@string/txt_campeao_turno"
+                                android:textColor="@color/light_blue"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <Button
+                    android:id="@+id/btn_Enviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/txt_criarJogador"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:textColor="@color/light_blue"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

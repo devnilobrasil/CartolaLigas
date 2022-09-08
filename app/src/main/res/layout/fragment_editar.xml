@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.EditarFragment">
+
+
+        <!--    Geral-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_campeao_geral"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_cGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_campeao_geral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/c_geral"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cGeral" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_titulo"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cGeral">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_campeao_geral"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_vice_geral"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_campeao_geral">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_vGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_vice_geral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_vice_geral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/v_geral"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_vGeral" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_vice_geral"
+                    app:layout_constraintTop_toBottomOf="@id/txt_vGeral">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_vice_geral"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_terceiro_geral"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_vice_geral">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_tGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_terceiro_geral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_terceiro_geral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/t_geral"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tGeral" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_terceiro_geral"
+                    app:layout_constraintTop_toBottomOf="@id/txt_tGeral">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_terceiro_geral"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_quarto_geral"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_terceiro_geral">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_qGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_quarto_geral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_quarto_geral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/q_geral"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_qGeral" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_quarto_geral"
+                    app:layout_constraintTop_toBottomOf="@id/txt_qGeral">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_quarto_geral"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_quinto_geral"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_quarto_geral"
+            app:layout_constraintBottom_toTopOf="@id/separate">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_quintoGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_quinto_geral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_quinto_geral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/qi_geral"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_quintoGeral" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_quinto_geral"
+                    app:layout_constraintTop_toBottomOf="@id/txt_quintoGeral">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_quinto_geral"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/separate"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@color/_blue"
+            app:layout_constraintBottom_toTopOf="@id/cv_campeao_mes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_quinto_geral" />
+
+        <TextView
+            style="@style/ContainerComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_two"
+            android:paddingHorizontal="15dp"
+            android:text="@string/txt_mes"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/cv_campeao_mes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_quinto_geral" />
+
+        <!--    Mês-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_campeao_mes"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separate">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_cMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_campeao_mes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_campeao_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/c_mes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cMes" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_campeao_mes"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cMes">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_campeao_mes"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_v_mes"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_campeao_mes">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_vMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_vice_mes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_vice_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/v_mes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_vMes" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_vice_mes"
+                    app:layout_constraintTop_toBottomOf="@id/txt_vMes">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_vice_mes"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_t_mes"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_v_mes"
+            app:layout_constraintBottom_toTopOf="@id/separate_mes">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_tMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_terceiro_mes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_t_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/t_mes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tMes" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_t_mes"
+                    app:layout_constraintTop_toBottomOf="@id/txt_tMes">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_terceiro_mes"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_ponto"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/separate_mes"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@color/_blue"
+            app:layout_constraintBottom_toTopOf="@id/cv_campeao_copa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_t_mes" />
+
+        <TextView
+            style="@style/ContainerComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_two"
+            android:paddingHorizontal="15dp"
+            android:text="@string/txt_copa"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/cv_campeao_copa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_t_mes" />
+
+        <!--    Copa-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_campeao_copa"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separate_mes">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_cCopa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_campeao_copa"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_campeao_copa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/c_copa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cCopa" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_campeao_copa"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cCopa">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_campeao_copa"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_vice_copa"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_campeao_copa">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_vCopa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_vice_copa"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_vice_copa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/v_copa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_vCopa" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_vice_copa"
+                    app:layout_constraintTop_toBottomOf="@id/txt_vCopa">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_vice_copa"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_terceiro_copa"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_vice_copa"
+            app:layout_constraintBottom_toTopOf="@id/separate_turno">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_tCopa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_terceiro_copa"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_terceiro_copa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/t_copa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tCopa" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_terceiro_copa"
+                    app:layout_constraintTop_toBottomOf="@id/txt_tCopa">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_terceiro_copa"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_ponto"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/separate_turno"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:alpha="0.2"
+            android:background="@color/_blue"
+            app:layout_constraintBottom_toTopOf="@id/cv_terceiro_copa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_campeao_turno" />
+
+        <TextView
+            style="@style/ContainerComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_two"
+            android:paddingHorizontal="15dp"
+            android:text="@string/txt_turno"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/cv_terceiro_copa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_campeao_turno" />
+
+        <!--   Turno-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_campeao_turno"
+            style="@style/ContainerComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separate_turno"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_cTurno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:background="@drawable/bg_information_titulos"
+                    android:elevation="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/txt_campeao_turno"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_campeao_turno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="30dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="8dp"
+                    android:maxWidth="80dp"
+                    android:minWidth="80dp"
+                    android:src="@drawable/c_turno"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cTurno" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_campeao_turno"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cTurno">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:text="@string/pt_campeao_turno"
+                        android:textColor="@color/light_blue"
+                        android:textSize="85sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:elevation="8dp"
+                        android:text="@string/txt_pontos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_campeao_turno"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

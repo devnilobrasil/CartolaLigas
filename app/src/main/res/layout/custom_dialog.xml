@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/container_components">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_nome_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="NomeTime" />
+
+
+            <TextView
+                android:id="@+id/txt_nome_jogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:textColor="@color/light_gray"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_nome_time"
+                tools:text="NomeJogador" />
+
+            <View
+                android:id="@+id/bg_pontos"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:alpha="0.4"
+                android:background="@drawable/oval_image"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_pontos_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/bg_pontos"
+                app:layout_constraintEnd_toEndOf="@+id/bg_pontos"
+                app:layout_constraintStart_toStartOf="@+id/bg_pontos"
+                app:layout_constraintTop_toTopOf="@+id/bg_pontos"
+                tools:text="5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.7"
+        android:background="@color/_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/txt_titulos"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_dialog" />
+
+    <TextView
+        android:id="@+id/label_geral"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_geral"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_titulos_geral"
+        app:layout_constraintEnd_toStartOf="@id/ll_titulos_geral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_titulos_geral" />
+
+    <TextView
+        android:id="@+id/label_mes"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_mes"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_titulos_mes"
+        app:layout_constraintEnd_toStartOf="@id/ll_titulos_mes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_titulos_mes" />
+
+    <TextView
+        android:id="@+id/label_copa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/txt_copa"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_titulos_copa"
+        app:layout_constraintEnd_toStartOf="@id/ll_titulos_copa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_titulos_copa" />
+
+    <TextView
+        android:id="@+id/label_turno"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_turno"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_titulos_turno"
+        app:layout_constraintEnd_toStartOf="@id/ll_titulos_turno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_titulos_turno" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_titulos_geral"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_dialog">
+
+        <ImageView
+            android:id="@+id/img_c_geral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="10dp"
+            android:minWidth="40dp"
+            android:src="@drawable/c_geral"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_v_geral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/v_geral"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_c_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_t_geral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/t_geral"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_v_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_v_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_quarto_geral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/q_geral"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_t_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_t_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_quinto_geral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/qi_geral"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_q_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_q_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_texto_geral"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_titulos_geral">
+
+        <TextView
+            android:id="@+id/txt_cGeral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_vGeral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_tGeral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_qGeral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_quintoGeral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+
+    </LinearLayout>
+
+    <!--      Mes-->
+    <LinearLayout
+        android:id="@+id/ll_titulos_mes"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_texto_geral">
+
+        <ImageView
+            android:id="@+id/img_c_mes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="10dp"
+            android:minWidth="40dp"
+            android:src="@drawable/c_mes"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_v_mes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/v_mes"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_c_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_t_mes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/t_mes"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_v_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_v_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_texto_mes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_titulos_mes">
+
+        <TextView
+            android:id="@+id/txt_cMes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_vMes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_tMes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+
+    </LinearLayout>
+
+    <!--    Copa-->
+    <LinearLayout
+        android:id="@+id/ll_titulos_copa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_texto_mes">
+
+        <ImageView
+            android:id="@+id/img_c_copa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="10dp"
+            android:minWidth="40dp"
+            android:src="@drawable/c_copa"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_v_copa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/v_copa"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_c_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+        <ImageView
+            android:id="@+id/img_t_copa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/t_copa"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_v_geral"
+            app:layout_constraintStart_toEndOf="@+id/img_v_geral"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_texto_copa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_titulos_copa">
+
+        <TextView
+            android:id="@+id/txt_cCopa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_vCopa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+        <TextView
+            android:id="@+id/txt_tCopa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+
+
+    </LinearLayout>
+
+    <!--    Turno-->
+    <LinearLayout
+        android:id="@+id/ll_titulos_turno"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_texto_copa">
+
+        <ImageView
+            android:id="@+id/img_c_turno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:elevation="8dp"
+            android:maxWidth="10dp"
+            android:minWidth="40dp"
+            android:src="@drawable/c_turno"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_dialog" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_texto_turno"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_titulos_turno">
+
+        <TextView
+            android:id="@+id/txt_cTurno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/img_c_geral"
+            app:layout_constraintStart_toEndOf="@id/img_c_geral"
+            tools:text="5x" />
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_click_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/bs_button_confirm"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_texto_turno" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

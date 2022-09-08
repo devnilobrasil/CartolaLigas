@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="gray">#88888888</color>
+    <color name="dark_gray">#884A4A4A</color>
+    <color name="light_blue">#3052FF</color>
+    <color name="_blue">#001666</color>
+    <color name="dark_blue">#A9B4E9</color>
+    <color name="orange">#FF9A30</color>
+    <color name="orange_two">#FF8120</color>
+
+    <color name="txt_nome_jogador_adapter_gray">#939393</color>
+</resources>

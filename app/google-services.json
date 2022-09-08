@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608585171864",
+    "firebase_url": "https://cartola-ligas-default-rtdb.firebaseio.com",
+    "project_id": "cartola-ligas",
+    "storage_bucket": "cartola-ligas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608585171864:android:43b35a9e46b90f38f021ed",
+        "android_client_info": {
+          "package_name": "com.example.admcartolaligas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608585171864-3n5mgk0u45nsm4oj3q8h29opq617u3lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-5AeNCuTLZOarh7ZRwc25ErX9vpVh_rM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608585171864-3n5mgk0u45nsm4oj3q8h29opq617u3lp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
