@@ -16,7 +16,7 @@ Estes dados são armazenados no BD da Firebase Realtime Database, e servirá com
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/splash.png" width="20%" height="20%"> <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen1.png" width="20%" height="20%">
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen2.png" width="20%" height="20%"> <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen3.png" width="20%" height="20%">
 
-# Tecnologias utilizadas
+# Linguagem utilizada
 - Kotlin
 
 ## Banco de Dados
