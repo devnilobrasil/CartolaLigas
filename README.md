@@ -10,7 +10,7 @@ Consiste em uma aplicação no qual é possível cadastrar/adicionar jogadores d
 - Nome do Time
 - Títulos Conquistados
 
-Estes dados são armazenados no BD da Firebase Realtime Database, e servirá como base para alimentar a aplicação principal do projeto (em desenvolvimento).
+Cada título tem uma pontuação específica e determina o desempenho de um jogador ao longo do histórico de participação da liga. Estes dados são armazenados no BD da Firebase Realtime Database, e servirá como base para alimentar a aplicação principal do projeto (em desenvolvimento).
 
 ## Layout mobile
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/splash.png" width="20%" height="20%"> <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen1.png" width="20%" height="20%">
