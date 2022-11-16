@@ -1,66 +1,66 @@
 # Cartola APP Admin
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devnilobrasil/CartolaLigas/blob/master/License) 
 
-# Sobre o projeto
+# About Project
 
-O Cartola APP Admin é uma aplicação mobile desenvolvida para gerir uma liga familiar do Cartola FC. 
+Cartola APP Admin is a mobile application developed to manage a Cartola FC family league. 
 
-Consiste em uma aplicação no qual é possível cadastrar/adicionar jogadores da liga, determinando as seguintes informações:
-- Nome do Jogador
-- Nome do Time
-- Títulos Conquistados
+It consists of an application in which you can register/add players to the league, determining the following information:
+- Player Name
+- Team Name
+- Titles Achieved
 
-Cada título tem uma pontuação específica e determina o desempenho de um jogador ao longo do histórico de participação da liga. Estes dados são armazenados no BD da Firebase Realtime Database, e servirá como base para alimentar a aplicação principal do projeto (em desenvolvimento).
+Each title has a specific score and determines a player's performance throughout the league's participation history. This data is stored in the Firebase Realtime Database, and will serve as the basis for the project's main application (under development).
 
 ## Layout mobile
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/splash.png" width="20%" height="20%"> <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen1.png" width="20%" height="20%">
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen2.png" width="20%" height="20%"> <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen3.png" width="20%" height="20%">
 
-# Usabilidade
+# Usability
 
-1) A tela inicial será uma Splash no qual consta o nome e a logo do APP
+1) The initial screen will be a Splash with the name and logo of the APP
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/splash.png" width="20%" height="20%">
 
-2) Posteriormente irá para a tela de login (com o suporte do Firebase Authentication)
+2) Afterwards, you'll go to the login screen (with Firebase Authentication support)
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/login.jpg" width="20%" height="20%">
 
-3) É possível criar uma conta, caso ainda não possua, ou recuperar a conta, caso tenha esquecido a senha.
+3) You can create an account if you do not yet have one, or recover your account if you have forgotten your password.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/criar_conta.jpg" width="20%" height="20%"> - <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/recuperar_conta.jpg" width="20%" height="20%">
 
-4) A tela principal do APP é onde serão exibidos os clubes/jogadores cadastrados. É possível cadastra-los clicando no botão no canto inferior direito da tela.
+4) The main screen of the APP is where the registered clubs/players will be displayed. You can register them by clicking on the button at the bottom right corner of the screen.
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/screen1.png" width="20%" height="20%"> 
 
-5) Tela para o cadastro de clubes/jogadores da liga.
+5) Screen for registering league clubs/players.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/criar_jogador.jpg" width="20%" height="20%"> - <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/jogador%20registrado.jpg" width="20%" height="20%">
 
-6) Tela inicial com o clube/jogador cadastrado. É possível edita-lo (laranja) ou remove-lo (cinza) clicando nos respectivos botões.
+6) Initial screen with the registered club/player. You can edit it (orange) or remove it (gray) by clicking on the respective buttons.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/jogador_cadastrado.jpg" width="20%" height="20%">
 
-7) Tela para edição/atualização das informações dos clubes/jogadores cadastrados
+7) Screen for editing/updating the information of registered clubs/players.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/editar_jogador.jpg" width="20%" height="20%">
 
-8) Caso clique no nome ou em qualquer área, salvo nos botões mencionados no item 6, será exibido um dialog com as informações detalhadas do clube/jogador.
+8) If you click on the name or any area other than the buttons mentioned in item 6, a dialog with the detailed information of the club/player will be displayed.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/detalhes.jpg" width="20%" height="20%">
 
-9) Tela para remoção dos clubes/jogadores cadastrados.
+9) Screen to remove registered clubs/players.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/deletar_jogador.jpg" width="20%" height="20%">
 
-10) Na aba 'Informações', são exibidas as informações sobre os títulos, pontuação e a imagem do troféu.
+10) The 'Information' tab displays information about the titles, score, and the trophy image.
 
 <img src="https://github.com/devnilobrasil/assets/blob/main/cartolaAppAdmin/informacoes.jpg" width="20%" height="20%">
 
-# Linguagem utilizada
+# Language
 - Kotlin
 
-## Banco de Dados
+## Database
 - Firebase Realtime Database
 
-# Autor
+# Author
 
 Nilo Soares Santos Brasil Sousa
